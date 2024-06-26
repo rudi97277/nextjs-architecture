@@ -1,0 +1,9 @@
+version: '3.9'
+name: uat-mri
+services:
+  app:
+    image: admin-mri-sv/fe
+    build: ./
+    container_name: uat-frontend-mri
+    ports:
+      - 9083:3000
